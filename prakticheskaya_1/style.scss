@@ -1,0 +1,55 @@
+@use 'sass:color';
+
+//переменные
+$primary-color: #3498db;
+$border-radius: 12px;
+
+
+@mixin shadow { //миксин для тени
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+.product-card { //товарная карточка
+    width: 200px;
+    padding: 16px;
+    border-radius: $border-radius;
+    background: white;
+    @include shadow;
+
+    &__image {
+        width: 100%;
+        border-radius: $border-radius;
+    }
+
+    &__title {
+        font-size: 18px;
+        margin: 12px 0 4px;
+        color: #333;
+    }
+
+    &__description {
+        font-size: 14px;
+        color: #666;
+        margin: 0 0 16px;
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 8px 16px;
+        background: $primary-color;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 14px;
+
+        &:hover {
+            background: color.adjust($primary-color, $lightness: -10%);
+        }
+    }
+}
