@@ -4,19 +4,19 @@
 
 ## Структура проекта
 
-prakticheskaya_9-12/  (МОГЛИ НАПИСАТЬ 7-12, но разбираем конкретный файл в репоз.)
-├── backend/ # Node.js + Express сервер (задания 7–11)
-│ ├── app.js # Основной код сервера
-│ └── package.json
-└── frontend/ # React-клиент (задания 10–11)
-├── public/
-└── src/
-├── api/ # Axios клиент с interceptors
-├── components/ # React-компоненты (Login, Register, ProductList, AdminUsers...)
-├── context/ # AuthContext
-├── pages/ # Страница товаров
-├── App.js
-└── index.js
+  prakticheskaya_9-12/  (МОГЛИ НАПИСАТЬ 7-12, но разбираем конкретный файл в репоз.)
+  ├── backend/ # Node.js + Express сервер (задания 7–11)
+  │ ├── app.js # Основной код сервера
+  │ └── package.json
+  └── frontend/ # React-клиент (задания 10–11)
+  ├── public/
+  └── src/
+  ├── api/ # Axios клиент с interceptors
+  ├── components/ # React-компоненты (Login, Register, ProductList, AdminUsers...)
+  ├── context/ # AuthContext
+  ├── pages/ # Страница товаров
+  ├── App.js
+  └── index.js
 
 
 ---
