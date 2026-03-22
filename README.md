@@ -133,9 +133,13 @@
 
 ## Запуск проекта
 
-### Сервер (backend)
+### Бэк+фронт (backend + frontend bash)
 
 ```bash
 cd backend
 npm install
 node app.js
+
+cd frontend
+npm install
+npm start
